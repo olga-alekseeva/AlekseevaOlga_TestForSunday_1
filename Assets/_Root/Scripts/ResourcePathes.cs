@@ -12,9 +12,9 @@ internal sealed class ResourcePathes
     }
     internal sealed class ConstantNames
     {
-        public const string MENU_SCENE_NAME = "Scene_0";
-        public const string GALLERY_SCENE_NAME = "Scene_1";
-        public const string REWIEW_SCENE_NAME = "Scene_2";
+        public const string MENU_SCENE_NAME = "MenuScene";
+        public const string GALLERY_SCENE_NAME = "GalleryScene";
+        public const string REWIEW_SCENE_NAME = "ReviewScene";
 
 
     }
