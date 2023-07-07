@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class GallerySceneStarter : MonoBehaviour
 {
-
-
    
     void Start()
     {
-        
+       
     }
 
-    void Update()
-    {
-        
-    }
+  
 }

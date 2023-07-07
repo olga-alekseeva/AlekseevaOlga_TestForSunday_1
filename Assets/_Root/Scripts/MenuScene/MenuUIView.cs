@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-internal sealed class MenuUIView : MonoBehaviour, IMenuUIView
+internal sealed class MenuUIView : MonoBehaviour
 {
     [SerializeField] public GameObject _loadingWindowObject;
     [SerializeField] public Slider _loadingSlider;
