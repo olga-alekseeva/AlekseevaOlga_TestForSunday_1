@@ -8,7 +8,6 @@ internal sealed class MenuSceneStarter : MonoBehaviour
     private MenuUIView _menuUIView;
     private AsyncOperation _loadingProgress;
 
-
     public void Start()
     {
         InitLevelInstantiator();
@@ -16,6 +15,9 @@ internal sealed class MenuSceneStarter : MonoBehaviour
         _menuUIView = menuUIView;
         _menuUIView._loadingWindowObject.SetActive(false);
         _menuUIView._loadGalleryButton.onClick.AddListener(LoadGalleryScene);
+        ScreenOrientationSetter screenOrientationSetter = new ScreenOrientationSetter();
+        screenOrientationSetter.PortraitScreenOrientation();
+
     }
     public void LoadGalleryScene()
     {
@@ -42,6 +44,5 @@ internal sealed class MenuSceneStarter : MonoBehaviour
             _loadingProgress.allowSceneActivation = true;
         }
     }
-
 
 }

@@ -3,6 +3,9 @@ internal sealed class ResourcePathes
     internal sealed class Prefabs
     {
         public const string MENU_UI_PREFAB = "Prefabs/MenuScenePrefabs/MainMenu";
+        public const string BACK_BUTTON_UI_PREFAB = "Prefabs/GalleryScenePrefabs/BackButton";
+
+
     }
     internal sealed class ScriptableObjects
     {
