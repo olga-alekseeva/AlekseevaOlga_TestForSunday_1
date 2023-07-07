@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Tools;
 using UnityEngine;
 
-public class ReviewSceneStarter : MonoBehaviour
+internal sealed class ReviewSceneStarter : MonoBehaviour
 {
     void Start()
     {

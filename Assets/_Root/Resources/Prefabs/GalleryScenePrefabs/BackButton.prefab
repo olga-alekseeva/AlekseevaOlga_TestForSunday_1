@@ -267,3 +267,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebafd424e3747d1448cdad651f75bffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backButtonObject: {fileID: 8411949627916836811}
+  backButton: {fileID: 4371219824853501723}
