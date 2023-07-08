@@ -13,8 +13,8 @@ internal sealed class MenuSceneStarter : MonoBehaviour
         InitLevelInstantiator();
         MenuUIView menuUIView = GameObject.FindObjectOfType<MenuUIView>();
         _menuUIView = menuUIView;
-        _menuUIView._loadingWindowObject.SetActive(false);
-        _menuUIView._loadGalleryButton.onClick.AddListener(LoadGalleryScene);
+        _menuUIView.loadingWindowObject.SetActive(false);
+        _menuUIView.loadGalleryButton.onClick.AddListener(LoadGalleryScene);
         ScreenOrientationSetter screenOrientationSetter = new ScreenOrientationSetter();
         screenOrientationSetter.PortraitScreenOrientation();
 
@@ -33,13 +33,13 @@ internal sealed class MenuSceneStarter : MonoBehaviour
     {
         float loadingProgressCounter;
         _loadingProgress = SceneManager.LoadSceneAsync(ResourcePathes.ConstantNames.GALLERY_SCENE_NAME);
-        _menuUIView._loadingWindowObject.SetActive(true);
+        _menuUIView.loadingWindowObject.SetActive(true);
         _loadingProgress.allowSceneActivation = false;
         while (!_loadingProgress.isDone)
         {
             loadingProgressCounter = Mathf.Clamp01(_loadingProgress.progress / 0.9f);
-            _menuUIView._loadingPercentText.text = $"Loading... {(loadingProgressCounter * 100).ToString("0")}%";
-            _menuUIView._loadingSlider.value = loadingProgressCounter;
+            _menuUIView.loadingPercentText.text = $"Loading... {(loadingProgressCounter * 100).ToString("0")}%";
+            _menuUIView.loadingSlider.value = loadingProgressCounter;
             yield return null;
             _loadingProgress.allowSceneActivation = true;
         }

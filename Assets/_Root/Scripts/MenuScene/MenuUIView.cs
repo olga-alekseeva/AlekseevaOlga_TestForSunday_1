@@ -6,10 +6,10 @@ using UnityEngine.UI;
 
 internal sealed class MenuUIView : MonoBehaviour
 {
-    [SerializeField] public GameObject _loadingWindowObject;
-    [SerializeField] public Slider _loadingSlider;
-    [SerializeField] public TMP_Text _loadingPercentText;
-    [SerializeField] public Button _loadGalleryButton;
+    [SerializeField] public GameObject loadingWindowObject;
+    [SerializeField] public Slider loadingSlider;
+    [SerializeField] public TMP_Text loadingPercentText;
+    [SerializeField] public Button loadGalleryButton;
 
      
 }

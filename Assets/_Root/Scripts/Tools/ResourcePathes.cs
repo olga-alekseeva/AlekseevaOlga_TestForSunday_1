@@ -11,6 +11,7 @@ internal sealed class ResourcePathes
     {
         public const string MENU_LEVEL_PREFAB = "ScriptableObjects/MenuLevelPrefab";
         public const string GALLERY_LEVEL_PREFAB = "ScriptableObjects/GalleryLevelPrefab";
+        public const string VIEW_LEVEL_PREFAB = "ScriptableObjects/ViewLevelPrefab";
 
     }
     internal sealed class ConstantNames

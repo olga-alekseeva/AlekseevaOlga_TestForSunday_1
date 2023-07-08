@@ -46,10 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c13b9552e872a4fb1f8420590d6f2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _loadingWindowObject: {fileID: 632207376563486299}
-  _loadingSlider: {fileID: 3619645281864265371}
-  _loadingPercentText: {fileID: 632207375085057697}
-  _loadGalleryButton: {fileID: 632207376577575139}
+  loadingWindowObject: {fileID: 632207376563486299}
+  loadingSlider: {fileID: 3619645281864265371}
+  loadingPercentText: {fileID: 632207375085057697}
+  loadGalleryButton: {fileID: 632207376577575139}
 --- !u!1001 &4406641590307218028
 PrefabInstance:
   m_ObjectHideFlags: 0
